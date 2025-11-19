@@ -27,7 +27,6 @@
 
 <p>Quando um usuário executa um comando, acessa um arquivo ou realiza tarefas administrativas, o Linux verifica esses arquivos para decidir se permite ou nega a ação.</p>
 
-
 <h2>Tipos de Usuário</h2>
 
 <form>
@@ -66,20 +65,33 @@
 <table>
     <tbody>
         <tr>
-          <td><strong>useradd name</strong></td>
+          <td><code><strong>useradd name</strong></code></td>
           <td>Ferramenta de linha de comando básico e direto para adicionar novos usuários ao sistema, mas não fornece uma interface interativa e amigável durante o processo.</td>
         </tr>
-        <tr>
-          <td><strong>useradd -m name</strong></td>
+    </tbody>
+</table>
+<form>
+    <ol>
+         <ul>
+             <li>
+            ⚠️ Para o comando useradd, lembre-se de criar uma senha <strong>'sudo passwd name'</strong>, a home <strong>'sudo mkdir /home/name'</strong> e o grupo <strong>'sudo chown name:name /home/neme'</strong>
+          </li>
+        </ul>
+    </ol>
+</form>
+<table>
+      <tr>
+          <td><code><strong>useradd -m name</strong></code></td>
           <td>Cria o usuário e também cria o diretório home (por exemplo /home/name) caso não exista, copiando os arquivos padrão de /etc/skel e ajustando a propriedade/permissões. O comando não define senha automaticamente
           </td>
         </tr>
-         <tr>
-            <td><strong>adduser name</strong></td>
-            <td>Ferramenta amigável e interativa para criar novos usuário ao sistema. Ele apresenta uma série de pergntas durante o processo de criação, como o nome completo do usuário, senha, grupos adicionais , tornando a tarefa mais simples para iniciantes.<br> O adduser também cuida automaticamente de várias configurações padrão, como a criação de uma pasta inicial para o usuário em /home e a atribuição de um shell padrão.
-            </td>
-        </tr>
-    </tbody>
+</table>
+<table>
+    <tr>
+        <td><code><strong>adduser name</strong></code></td>
+        <td>Ferramenta amigável e interativa para criar novos usuário ao sistema. Ele apresenta uma série de pergntas durante o processo de criação, como o nome completo do usuário, senha, grupos adicionais , tornando a tarefa mais simples para iniciantes.<br> O adduser também cuida automaticamente de várias configurações padrão, como a criação de uma pasta inicial para o usuário em /home e a atribuição de um shell padrão.
+        </td>
+    </tr>
 </table>
 <form>
   <ol>
@@ -88,47 +100,87 @@
         ⚠️ Importante: os comandos mencionados precisam ser executados com privilégios de administrador (sudo ou root), pois criar, modificar ou remover usuários altera partes críticas do sistema.<br><br>
       </li>
     </ul>
-    <ul>
-     <li>
-        ⚠️ Para o comando useradd, lembre-se de criar uma senha <strong>'sudo passwd name'</strong>, a home <strong>'sudo mkdir /home/name'</strong> e o grupo <strong>'sudo chown name:name /home/neme'</strong>
-      </li>
-    </ul>
   </ol>
 </form>
 
-<h4> Possíveis erros:</h4>
+<h2>Opções de comando</h2>
 
 <table>
   <thead>
-        <th>Erro</th>
-        <th>Possível Solução</th>
+        <th>Comando</th>
+        <th>Funcionalidade</th>
     </thead>
     <tbody>
         <tr>
-          <td>useradd name</td>
-          <td>...
+          <td>-m</td>
+          <td>
+              Cria automaticamente o diretório home do usuário. Se o diretório não existir, ele é criado a partir de /etc/skel.
           </td>
         </tr>
          <tr>
-            <td>adduser name</td>
+            <td>-d</td>
             <td>
-              ...
+                Define manualmente o diretório home do usuário.<br>Ex:<code>useradd -m <strong>-d /opt/erpnext</strong></code>... <br>Normalmente seria /home/erpnext, mas aqui está sendo definido para opt/erpnext. 
             </td>
         </tr>
+        <tr>
+            <td>-U</td>
+            <td>
+                Cria um grupo com o mesmo nome do usuário automaticamente.<br>Ex: Usuário: erpnext, Grupo criado: erpnext.<br> Esse grupo será o grupo primário do usuário. 
+            </td>
+        </tr>
+        <tr>
+            <td>-u</td>
+            <td>
+                Define manualmente o UID.
+            </td>
+        </tr>
+          </tr>
+        <tr>
+            <td>-r</td>
+            <td>
+                Cria um usuário do sistema (system user).<br>Características: UID geralmente abaixo de 1000 (em muitas distros); Ideal para serviços, daemons e aplicações;Não cria entradas em alguns arquivos como /var/mail.   
+            </td>
+        </tr>
+         <tr>
+            <td>-s</td>
+            <td>
+               Define o shell padrão do usuário.<br>Ex: <code>useradd -m -d /opt/erpnext -U -r <strong>-s /bin/bash</strong> erpnext</code>. Aqui está sendo especificado que o user erpnext deve usar: /bin/bash.
+            </td>
+        </tr>
+          </tr>
     </tbody>
 </table>
-<form>
-  <ol>
-    <ul>
-      <li>
-        ...
-      </li>
-    </ul>
-  </ol>
-</form>
+
+
+<h2>Removendo Usuários</h2> 
+
+<p>Existem duas formas comuns de remover contas: <strong>userdel</strong> e <strong>deluser</strong>.</p> 
+
+<p><strong>userdel</strong> é o comando tradicional, disponível em todas as distribuições como parte das ferramentas básicas do sistema. É uma ferramenta de baixo nível que atende às necessidades de remoção de contas, porém exige cuidado e conhecimento técnico ao ser utilizada.</p> 
+
+<p><strong>deluser</strong> é um utilitário mais amigável (presente, por exemplo, em Debian/Ubuntu) que automatiza etapas e oferece uma abordagem mais segura e prática, semelhante ao comportamento do <strong>adduser</strong> na criação de contas. Em geral, <strong>userdel</strong> é indicado para cenários avançados; <strong>deluser</strong> facilita a rotina do administrador ou do usuário comum.</p> 
+
+<p>Se, ao tentar remover uma conta, ocorrer a mensagem:</p>
+
+<p><strong><i>userdel: user teste is currently used by process 18751</i></strong></p> 
+
+<p>Proceda da seguinte forma (com <strong>sudo</strong> ou como root):</p> 
+<ul> 
+    <li>Identifique o processo: <code>ps -fp 18751</code> ou liste todos os processos do usuário: <code>ps -u teste</code> / <code>pgrep -u teste -l</code>.</li> 
+    <li>Tente encerrar a sessão de forma ordenada: <code>sudo loginctl terminate-user teste</code>.</li> 
+    <li>Se necessário, encerre o PID específico: <code>sudo kill 18751</code>. Como último recurso, use <code>sudo kill -9 18751</code>, ciente dos riscos de interromper processos abruptamente.</li>     
+    <li>Após confirmar que não há processos ativos do usuário, execute: <code>sudo userdel -r teste</code> ou <code>sudo deluser --remove-home teste</code>.</li>
+</ul> 
+
+<p>Observação: todos os comandos acima exigem privilégios administrativos. Sempre prefira métodos ordenados (por exemplo, <code>loginctl</code>) antes de recorrer a sinais fortes, e avise usuários afetados em ambientes multiusuário.</p>
+
+
 
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 https://dev.to/diogoizele/grupos-e-usuarios-em-linux-o-que-voce-precisa-saber-4lp9
 https://blog.scalefusion.com/pt/gerenciamento-de-usu%C3%A1rios-Linux/
+https://linuxvisual.com/comando-userdel/
+https://life.inf.ufes.br/wiki/como-adicionar-usuario-linux/
