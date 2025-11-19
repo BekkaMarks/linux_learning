@@ -152,12 +152,19 @@
     </tbody>
 </table>
 
-
 <h2>Removendo Usuários</h2> 
 
 <p>Existem duas formas comuns de remover contas: <strong>userdel</strong> e <strong>deluser</strong>.</p> 
 
 <p><strong>userdel</strong> é o comando tradicional, disponível em todas as distribuições como parte das ferramentas básicas do sistema. É uma ferramenta de baixo nível que atende às necessidades de remoção de contas, porém exige cuidado e conhecimento técnico ao ser utilizada.</p> 
+
+<table>
+    <tbody>
+        <tr>
+          <td><code>sudo userdel -r teste </code>: Remove a conta "teste" do sistema. Aqui o a opção -r também tenta apagar o diretório home (/home/teste) e o mail spool do usuário (verifique em /var/mail ou /var/spool/mail com:<code>ls -l /var/mail</code> e <code>ls -l /var/spool/mail</code>).</td>
+        </tr>
+    </tbody>
+</table>
 
 <p><strong>deluser</strong> é um utilitário mais amigável (presente, por exemplo, em Debian/Ubuntu) que automatiza etapas e oferece uma abordagem mais segura e prática, semelhante ao comportamento do <strong>adduser</strong> na criação de contas. Em geral, <strong>userdel</strong> é indicado para cenários avançados; <strong>deluser</strong> facilita a rotina do administrador ou do usuário comum.</p> 
 
@@ -167,20 +174,53 @@
 
 <p>Proceda da seguinte forma (com <strong>sudo</strong> ou como root):</p> 
 <ul> 
-    <li>Identifique o processo: <code>ps -fp 18751</code> ou liste todos os processos do usuário: <code>ps -u teste</code> / <code>pgrep -u teste -l</code>.</li> 
-    <li>Tente encerrar a sessão de forma ordenada: <code>sudo loginctl terminate-user teste</code>.</li> 
-    <li>Se necessário, encerre o PID específico: <code>sudo kill 18751</code>. Como último recurso, use <code>sudo kill -9 18751</code>, ciente dos riscos de interromper processos abruptamente.</li>     
-    <li>Após confirmar que não há processos ativos do usuário, execute: <code>sudo userdel -r teste</code> ou <code>sudo deluser --remove-home teste</code>.</li>
-</ul> 
-
-<p>Observação: todos os comandos acima exigem privilégios administrativos. Sempre prefira métodos ordenados (por exemplo, <code>loginctl</code>) antes de recorrer a sinais fortes, e avise usuários afetados em ambientes multiusuário.</p>
-
-
-
+    <li>Identifique o processo: <code>ps -f -p 18751</code> ou liste todos os processos do usuário: <code>ps -u teste</code> / <code>pgrep -u teste -l</code>.
+</li> 
+    <li>Tente encerrar a sessão de forma ordenada (se o sistema usar systemd): <code>sudo loginctl terminate-user teste</code>.
+</li> 
+    <li>Se necessário, encerre o PID específico: <code>sudo kill 18751</code>. Como último recurso, use <code>sudo kill -9 18751</code>, ciente dos riscos de interromper processos abruptamente.
+</li> 
+    <li>Após confirmar que não há processos ativos do usuário, execute: <code>sudo userdel -r teste</code> ou <code>sudo deluser --remove-home teste</code>.
+</li> 
+</ul>
+    <table> 
+        <thead>
+            <th>Comando</th> 
+            <th>Funcionalidade</th> 
+        </thead> 
+        <tbody>
+            <tr> 
+                <td>ps</td> 
+            <td> 
+                Exibe informações sobre os processos em execução na máquina. 
+            </td> 
+        </tr> 
+            <tr> 
+                <td>-f</td> 
+            <td> 
+                Mostra o processo em formato "full" (informação completa). 
+            </td> 
+        </tr> 
+        <tr> 
+            <td>-p</td> 
+        <td> Seleciona pelo ID (PID) especificado; requer o argumento do PID, por exemplo <code>-p 18751</code> ou <code>-p18751</code>. 
+        </td> 
+        </tr> 
+            <tr> 
+                <td>-u</td> 
+                <td> Lista processos do usuário indicado, por exemplo <code>ps -u teste</code>.
+                </td> 
+            </tr> 
+            <tr>
+                <td>-fp</td> 
+                <td> Combina as opções <code>-f</code> e <code>-p</code>; por exemplo <code>ps -f -p 18751</code> ou <code>ps -fp 18751</code>. Note que o <code>-p</code> exige o PID como argumento. </td>
+            </tr> 
+        </tbody> 
+    </table>
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-https://dev.to/diogoizele/grupos-e-usuarios-em-linux-o-que-voce-precisa-saber-4lp9
-https://blog.scalefusion.com/pt/gerenciamento-de-usu%C3%A1rios-Linux/
-https://linuxvisual.com/comando-userdel/
-https://life.inf.ufes.br/wiki/como-adicionar-usuario-linux/
+https://dev.to/diogoizele/grupos-e-usuarios-em-linux-o-que-voce-precisa-saber-4lp9<br>
+https://blog.scalefusion.com/pt/gerenciamento-de-usu%C3%A1rios-Linux/<br>
+https://linuxvisual.com/comando-userdel/<br>
+https://life.inf.ufes.br/wiki/como-adicionar-usuario-linux/<br>
