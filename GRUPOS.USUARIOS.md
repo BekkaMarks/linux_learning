@@ -156,7 +156,7 @@
 
 <p>Existem duas formas comuns de remover contas: <strong>userdel</strong> e <strong>deluser</strong>.</p> 
 
-<p><strong>userdel</strong> é o comando tradicional, disponível em todas as distribuições como parte das ferramentas básicas do sistema. É uma ferramenta de baixo nível que atende às necessidades de remoção de contas, porém exige cuidado e conhecimento técnico ao ser utilizada.</p> 
+<p><strong>✔ userdel</strong> é o comando tradicional, disponível em todas as distribuições como parte das ferramentas básicas do sistema. É uma ferramenta de baixo nível que atende às necessidades de remoção de contas, porém exige cuidado e conhecimento técnico ao ser utilizada.</p> 
 
 <table>
     <tbody>
@@ -217,10 +217,10 @@
             </tr> 
         </tbody> 
     </table>
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h3>Referências Utilizadas na Construção deste Material:</h3>
 https://dev.to/diogoizele/grupos-e-usuarios-em-linux-o-que-voce-precisa-saber-4lp9<br>
 https://blog.scalefusion.com/pt/gerenciamento-de-usu%C3%A1rios-Linux/<br>
 https://linuxvisual.com/comando-userdel/<br>
 https://life.inf.ufes.br/wiki/como-adicionar-usuario-linux/<br>
+https://guialinux.uniriotec.br/comandos-do-linux/<br>
