@@ -1,4 +1,4 @@
-# Instalação ERPNext (Ubuntu 22.04)
+# 🔧 Instalação ERPNext (Ubuntu 22.04)
 
 Este README descreve um fluxo prático para instalar o ERPNext em um servidor Ubuntu 22.04, incluindo a configuração do MariaDB. Substitua valores de exemplo (IP, porta, domínio, nomes) pelos seus.
 
