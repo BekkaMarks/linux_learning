@@ -42,3 +42,4 @@ bench update
 <br><br><br><br><br><br><br><br>
 https://docs.frappe.io/framework/v14/user/en/bench/reference/new-site
 https://docs.frappe.io/framework/user/en/bench/frappe-commands
+https://docs.frappe.io/framework/user/en/bench/bench-commands
