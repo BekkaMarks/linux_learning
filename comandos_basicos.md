@@ -19,7 +19,7 @@ bench --site {nome_site} comando
 
 ### build
 > Utilizado para compilar e gerar os arquivos estáticos (assets) do sistema — como CSS, JavaScript, SCSS, imagens, arquivos minificados e os bundles usados pelo frontend (Desk, Website, etc.).
-Ele pega os arquivos-fonte de cada app e gera os pacotes finais dentro da pasta: sites/assets/.
+Ele pega os arquivos-fonte de cada app e gera os pacotes finais dentro da pasta: `sites/assets/`.
 
 ```bash
 bench build
@@ -54,8 +54,8 @@ bench restart
 ### backup
 > O comando bench backup cria um backup completo do site, incluindo:
 > - Banco de dados: gera um arquivo .sql.gz com todas as tabelas e dados.
-> - Arquivos públicos: compacta o conteúdo de public/files.
-> - Arquivos privados: compacta o conteúdo de private/files.
+> - Arquivos públicos: compacta o conteúdo de `public/files`.
+> - Arquivos privados: compacta o conteúdo de `private/files`.
 > Ele garante que você possa restaurar o site exatamente como estava caso ocorra falha, migração ou corrupção de dados.
 
 ```bash
@@ -71,7 +71,7 @@ bench --site {nome_site} restore {path_do_backup_sql}
 ```
 
 ### drop-site
-> Remove definitivamente o site do Frappe/ERPNext. Ele apaga o banco de dados do site, remove a pasta sites/{site} e elimina todas as configurações do site no bench.
+> Remove definitivamente o site do Frappe/ERPNext. Ele apaga o banco de dados do site, remove a pasta `sites/{site}` e elimina todas as configurações do site no bench.<br>
 > Importante:
 > É um comando destrutivo. Depois de executado, não há como recuperar o site, a menos que exista um backup.
 
