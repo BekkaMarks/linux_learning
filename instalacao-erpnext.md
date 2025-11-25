@@ -237,7 +237,6 @@ Salve o arquivo e, em seguida, ative a variável de ambiente com o seguinte coma
 
 Crie o diretório do bench e ajuste permissões:
 ```bash
-# como root (ou usando sudo antes)
 sudo mkdir -p /opt/bench
 sudo chown -R frappe:frappe /opt/bench
 
