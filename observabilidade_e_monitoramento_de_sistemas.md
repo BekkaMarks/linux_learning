@@ -51,4 +51,5 @@ Juntos, formam a base para operação eficiente e confiável de sistemas moderno
 <h3>Referências Utilizadas na Construção deste Material:</h3>
 https://www.redhat.com/pt-br/topics/devops/what-is-observability
 https://www.locaweb.com.br/blog/temas/codigo-aberto/o-que-e-observabilidade-e-monitoramento/
+https://www.opservices.com.br/telemetria/
 https://aws.amazon.com/pt/compare/the-difference-between-monitoring-and-observability/#:~:text=Com%20os%20sistemas%20de%20monitoramento,centenas%20de%20componentes%20do%20servi%C3%A7o.
