@@ -89,6 +89,30 @@ bench drop-site {nome_site}
 bench --site {nome_site} install-app {nome_do_app}
 ```
 
+### uninstall-app
+> Remove um aplicativo de um site Frappe/ERPNext, apagando tudo o que foi criado durante a instalação.
+
+```bash
+bench --site {nome_site} uninstall-app {nome_do_app}
+```
+
+### mariadb
+> Abre o cliente do MariaDB/MySQL conectado diretamente ao banco de dados do site atual.
+> Uso típico: Consultar tabelas, depurar dados, verificar registros ou executar scripts SQL manualmente.
+
+```bash
+bench --site {nome_site} mariadb
+```
+
+### console
+> Abre um console interativo do Python com o ambiente Frappe carregado, permitindo executar código diretamente no contexto do site.
+> - Carrega o Frappe e seus módulos.
+> - Permite acessar DocTypes, banco de dados, funções internas e objetos do sistema via Python.
+> - Útil para depuração, testes rápidos e execução de comandos administrativos.
+
+```bash
+bench --site {nome_site} console
+```
 
 <br><br><br><br><br><br><br><br>
 https://docs.frappe.io/framework/v14/user/en/bench/reference/new-site
