@@ -47,7 +47,7 @@ Enquanto o monitoramento é essencial para detecção rápida, a observabilidade
 Juntos, formam a base para operação eficiente e confiável de sistemas modernos.
 
 
-<br><br><br>
-Referências Utilizadas na Construção deste Material:<br>
+<br><br>
+<h3>Referências Utilizadas na Construção deste Material:</h3>
 https://www.redhat.com/pt-br/topics/devops/what-is-observability
 https://www.locaweb.com.br/blog/temas/codigo-aberto/o-que-e-observabilidade-e-monitoramento/
