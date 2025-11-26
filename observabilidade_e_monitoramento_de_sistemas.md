@@ -1,4 +1,4 @@
-# Observabilidade
+# 🔍 Observabilidade
 
 Observabilidade é a <strong>capacidade de um sistema expor o que está acontecendo internamente por meio dos dados que ele próprio gera</strong>, como logs, métricas e rastreamentos.
 Ela possibilita uma análise mais proativa e detalhada do ambiente.
@@ -21,7 +21,7 @@ As principais fontes de telemetria:
 
 >Telemetria: processo de coletar, registrar e transmitir dados automaticamente de um sistema, dispositivo ou aplicação para um servidor ou ferramenta de monitoramento, permitindo análise, diagnóstico e tomada de decisão à distância.
 
-# Monitoramento
+# 📡 Monitoramento
 
 Monitoramento é o <strong>processo de acompanhar continuamente o estado, o desempenho e a disponibilidade de um sistema</strong>, utilizando métricas, alertas e verificações automatizadas.
 Seu objetivo principal é identificar comportamentos inesperados ou degradações antes que afetem usuários ou serviços críticos.
@@ -47,8 +47,7 @@ Enquanto o monitoramento é essencial para detecção rápida, a observabilidade
 Juntos, formam a base para operação eficiente e confiável de sistemas modernos.
 
 
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br>
+Referências Utilizadas na Construção deste Material:<br>
 https://www.redhat.com/pt-br/topics/devops/what-is-observability
 https://www.locaweb.com.br/blog/temas/codigo-aberto/o-que-e-observabilidade-e-monitoramento/
