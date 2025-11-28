@@ -38,7 +38,7 @@ Prometheus é uma ferramenta de monitoramento que coleta métricas em tempo real
 >  - (no Prometheus) um conjunto de labels;<br>
 > Exemplo: quantidade de requisições HTTP por segundo — registrada a cada 5 segundos.
 
-### Como o Prometheus Coleta, Armazena e Alerta
+### 🛠️ Como o Prometheus Coleta, Armazena e Alerta
 
 1. Ciclo de coleta (Scrape Cycle)<br>
 O Prometheus funciona realizando ciclos periódicos de coleta. A cada intervalo configurado (por exemplo, 15 segundos), ele lê a lista de alvos definida no prometheus.yml, acessa o endpoint /metrics de cada serviço e captura os valores expostos. Esses dados são convertidos em séries temporais e armazenados automaticamente.
@@ -50,18 +50,8 @@ O Prometheus salva todas as métricas no seu banco de séries temporais embutido
 O Prometheus avalia constantemente regras de alerta definidas pelos usuários. Quando uma condição é atendida (ex.: uso de CPU acima de 80% por 5 minutos), o Prometheus dispara um alerta para o Alertmanager, que é responsável por agrupar, silenciar e encaminhar notificações para canais como Slack, e-mail, Telegram ou sistemas de incidentes.
 
 
-
-
-
-
-
-
-
-
-
-
 <br><br>
-<h3>Referências Utilizadas na Construção deste Material:</h3>
+<h3>🔗 Referências Utilizadas na Construção deste Material:</h3>
 https://github.com/prometheus/prometheus
 https://medium.com/techbloghotmart/o-que-s%C3%A3o-s%C3%A9ries-temporais-e-como-aplicar-em-machine-learning-6ea5d94bec78
 https://blog.4linux.com.br/primeiros-passos-com-promql/
