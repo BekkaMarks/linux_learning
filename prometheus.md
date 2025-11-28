@@ -51,7 +51,7 @@ O Prometheus avalia constantemente regras de alerta definidas pelos usuários. Q
 
 
 <br><br>
-<h3>🔗 Referências Utilizadas na Construção deste Material:</h3>
+<h3>Referências Utilizadas na Construção deste Material:</h3>
 https://github.com/prometheus/prometheus
 https://medium.com/techbloghotmart/o-que-s%C3%A3o-s%C3%A9ries-temporais-e-como-aplicar-em-machine-learning-6ea5d94bec78
 https://blog.4linux.com.br/primeiros-passos-com-promql/
