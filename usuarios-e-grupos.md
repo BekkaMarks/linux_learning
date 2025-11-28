@@ -218,7 +218,7 @@
         </tbody> 
     </table>
 <br><br>
-<h3>🔗 Referências Utilizadas na Construção deste Material:</h3>
+<h3>Referências Utilizadas na Construção deste Material:</h3>
 https://dev.to/diogoizele/grupos-e-usuarios-em-linux-o-que-voce-precisa-saber-4lp9<br>
 https://blog.scalefusion.com/pt/gerenciamento-de-usu%C3%A1rios-Linux/<br>
 https://linuxvisual.com/comando-userdel/<br>
