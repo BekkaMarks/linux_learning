@@ -5,7 +5,7 @@ GitHub Actions é uma ferramenta de automação integrada ao GitHub que permite 
 Um dos usos mais comuns do GitHub Actions é automatizar o deploy de aplicações.<br>
 Por exemplo: quando um merge é feito na branch main ou master, um workflow pode ser configurado para realizar o deploy automaticamente, eliminando a necessidade de fazer esse processo manualmente.
 
-Os arquivos de automação devem ser colocados na pasta .github/workflows, pois é nela que o GitHub identifica que os arquivos YAML pertencem a pipelines que ele deve executar.
+Os arquivos de automação devem ser colocados na pasta <strong>.github/workflows </strong>, pois é nela que o GitHub identifica que os arquivos YAML pertencem a pipelines que ele deve executar.
 
 Em resumo, o GitHub Actions é amplamente utilizado para:
 
