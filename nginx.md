@@ -10,10 +10,10 @@ O NGINX é um servidor web de alta performance responsável por lidar com requis
 ### Modelo de funcionamento
 
 Diferente de servidores que criam um processo dedicado para cada requisição, o NGINX trabalha com um modelo baseado em um processo principal (“master process”), que cria workers conforme a quantidade de núcleos de CPU.
-- Cada worker opera de forma concorrente, gerenciando múltiplas conexões.
-  Diferença:
-            - Paralelo: tarefas realmente executadas ao mesmo tempo (múltiplos núcleos).
-            - Concorrente: o worker alterna rapidamente entre tarefas, dando a sensação de execução simultânea.
+Cada worker opera de forma concorrente, gerenciando múltiplas conexões.<br>
+  Diferença:<br>
+            - <strong>Paralelo:</strong> tarefas realmente executadas ao mesmo tempo (múltiplos núcleos).<br>
+            - <strong>Concorrente:</strong> o worker alterna rapidamente entre tarefas, dando a sensação de execução simultânea.
   
 Esse modelo permite que o NGINX atenda milhares de conexões com baixo consumo de recursos.
 
