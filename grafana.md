@@ -1,16 +1,22 @@
-# Grafana
+# 📊 Introdução ao Grafana
+O Grafana é uma plataforma que permite visualizar informações do sistema por meio de gráficos e dashboards interativos. Ele reúne dados como métricas, logs e rastreamentos (traces) vindos de diferentes fontes, permitindo consultar essas informações, criar alertas e automatizar algumas ações quando algo foge do esperado.
 
-Grafana é uma plataforma de visualização e análise de dados que unifica métricas, logs e traces a partir de diversas fontes. Ele renderiza dashboards interativos, executa consultas e oferece recursos de alertas e automações.
+<h4>Observabilidade</h4>
 
-Observabilidade
-- O que oferece: exploração ad-hoc, análise de correlação entre métricas, logs e traces (via Prometheus, Loki, Tempo, Mimir etc.) e suporte à investigação de causa raiz.
-- Como funciona: conecta-se a data sources, permitindo consultar séries temporais, logs e rastreamentos, relacionar visualmente eventos e entender comportamentos inesperados no sistema.
+No Grafana, a observabilidade significa conseguir explorar os dados com liberdade, comparar informações e entender como diferentes eventos estão relacionados.
+Ele permite analisar métricas, logs e traces de ferramentas como Prometheus, Loki, Tempo, Mimir, ajudando a encontrar a causa de problemas ou comportamentos inesperados.
+Para isso, o Grafana se conecta diretamente às fontes de dados, permitindo visualizar séries temporais, logs e eventos de forma organizada e relacionar tudo visualmente.
 
-Monitoramento
-- O que oferece: dashboards operacionais, acompanhamento em tempo real e alertas configuráveis para detectar condições conhecidas (thresholds, SLAs, KPIs).
-- Como funciona: consulta métricas e logs fornecidos por ferramentas especializadas (ex.: Prometheus, InfluxDB, Loki) e exibe tendências, status e gatilhos de alerta para o dia a dia das operações.
+<h4>Monitoramento</h4>
 
-Em suma: Grafana serve tanto ao monitoramento (detecção e notificação) quanto à observabilidade (investigação e correlação), sendo extensível e utilizável on‑premises ou na nuvem.
+O Grafana também é usado para monitoramento do ambiente no dia a dia.
+Ele oferece dashboards que mostram o status do sistema em tempo real e permite configurar alertas que avisam quando algo ultrapassa limites definidos — como thresholds, SLAs e KPIs.
+Ele consulta métricas e logs de ferramentas como Prometheus, InfluxDB e Loki, exibindo tendências, comportamentos e avisos importantes para as operações.
+
+<h4>Em resumo</h4>
+
+O Grafana serve tanto para monitoramento (acompanhar e detectar problemas) quanto para observabilidade (investigar e entender o motivo dos problemas).
+É uma ferramenta flexível, funciona em ambiente local ou na nuvem e se adapta a diferentes fontes de dados.
 <br><br>
 
 <h3>Referências Utilizadas na Construção deste Material:</h3>
