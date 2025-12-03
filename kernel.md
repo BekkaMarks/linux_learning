@@ -32,6 +32,12 @@ Quando um programa precisa fazer algo importante (como ler um arquivo, escrever 
 O kernel analisa a solicitação, decide se é permitida e executa a ação necessária.
 Sem isso, nenhum programa poderia interagir com o hardware.
 
+           Applications
+                ⬍
+              Kernel
+      ⬍        ⬍        ⬍
+     CPU     Memory   Devices
+     
 <br><br>
 <h3>Referências Utilizadas na Construção deste Material:</h3>
 https://www.corsair.com/pt/pt/explorer/glossary/what-is-a-kernel/#:~:text=O%20kernel%20%C3%A9%20o%20n%C3%BAcleo%20de%20um,que%20mant%C3%A9m%20tudo%20a%20funcionar%20sem%20colis%C3%B5es. <br>
