@@ -1,4 +1,4 @@
-<h1>Introdução ao Jira</h1>
+<h1>📌 Introdução ao Jira</h1>
 <p>
 O Jira é uma solução completa para gerenciamento de projetos, rastreamento de tarefas e automação de fluxos de trabalho. Ele possibilita que as equipes planejem, acompanhem e entreguem projetos de software de maneira eficiente, mantendo organização, visibilidade e colaboração em todas as etapas do desenvolvimento.
 </p>
