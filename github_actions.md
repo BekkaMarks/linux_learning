@@ -1,4 +1,4 @@
-# Introdução ao GitHub Actions
+# 🔄 Introdução ao GitHub Actions
 
 GitHub Actions é uma ferramenta de automação integrada ao GitHub que permite executar scripts e pipelines automaticamente em resposta a eventos no repositório. Ele possibilita criar workflows que são disparados por ações como push, commit, criação de issues, execução de migrations, abertura de pull requests, entre outras.
 
