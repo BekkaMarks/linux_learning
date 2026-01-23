@@ -33,7 +33,7 @@ Isso torna o desenvolvimento mais rápido, confiável e padronizado.
 > Ferramenta de análise de código estática usada para sinalizar erros de programação, bugs, erros estáticos e construções suspeitas.
 
 <br><br>
-<h3>Referências Utilizadas na Construção deste Material:</h3>
+<h3>📚 Referências Utilizadas na Construção deste Material:</h3>
 https://docs.github.com/pt/actions/get-started/understand-github-actions
 https://www.redhat.com/pt-br/topics/devops/what-is-ci-cd
 http://medium.com/@habbema/github-actions-2d1e016a9cee
