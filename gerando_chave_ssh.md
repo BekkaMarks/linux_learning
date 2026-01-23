@@ -35,6 +35,6 @@ git fetch upstream
 git pull
 ```
 <br><br>
-<h3>Referências Utilizadas na Construção deste Material:</h3>
+<h3>📚 Referências Utilizadas na Construção deste Material:</h3>
 
 https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
