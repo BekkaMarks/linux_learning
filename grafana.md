@@ -19,7 +19,7 @@ O Grafana serve tanto para monitoramento (acompanhar e detectar problemas) quant
 É uma ferramenta flexível, funciona em ambiente local ou na nuvem e se adapta a diferentes fontes de dados.
 <br><br>
 
-<h3>Referências Utilizadas na Construção deste Material:</h3>
+<h3>📚 Referências Utilizadas na Construção deste Material:</h3>
 https://github.com/grafana/grafana
 https://www.redhat.com/pt-br/topics/data-services/what-is-grafana
 https://blog.updev.dev.br/posts/grafana-a-plataforma-aberta-para-monitoramento-e-observabilidade
