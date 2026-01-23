@@ -21,7 +21,7 @@ Para entender melhor o pre-commit, é importante conhecer os conceitos relaciona
 
 **Pre-commit**: Gerencia e padroniza especificamente hooks do tipo `pre-commit`, organizando múltiplos hooks de forma declarativa e facilitando o versionamento e compartilhamento entre a equipe.
 
-## Referências
+## 📚 Referências
 
 - 📖 [Documentação Oficial](https://pre-commit.com/#installation)
 - 📝 [Tutorial Prático](https://medium.com/@habbema/pre-commit-315db54ef2d8)
