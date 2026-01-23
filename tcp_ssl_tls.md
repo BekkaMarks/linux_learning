@@ -48,6 +48,6 @@ Principais pontos:
 > IMAP (Internet Message Access Protocol) – Protocolo utilizado para receber e gerenciar e-mails diretamente no servidor, permitindo sincronização entre múltiplos dispositivos. <br><br>
 
 <br><br>
-<h3>Referências Utilizadas na Construção deste Material:</h3>
+<h3>📚 Referências Utilizadas na Construção deste Material:</h3>
 https://www.ssldragon.com/pt/blog/que-e-porta-ssl/ <br>
 https://www.digicert.com/pt/what-is-ssl-tls-and-https
