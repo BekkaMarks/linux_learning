@@ -34,6 +34,30 @@ O PostgreSQL conta ainda com diversos tipos de dados avançados, incluindo:
 - <strong>UUID</strong>
 - <strong>Tipos geométricos</strong>
 
+## Instalação
+Os comandos abaixo realizam apenas a instalação padrão do PostgreSQL, incluindo:
+- instalação dos pacotes básicos;
+- ativação automática do serviço;
+- criação do usuário padrão postgres;
+- permissão de acesso local ao banco via sudo -u postgres psql.
+ 
+```bash
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+```
+Após a instalação, é possível validar o serviço e acessar o banco de dados:
+```bash
+# Verifica se o PostgreSQL está em execução
+sudo systemctl status postgresql
+
+# Acessa o banco como usuário postgres
+sudo -u postgres psql
+```
+Faça a alteração da senha:
+```bash
+ALTER USER postgres PASSWORD 'nova-senha';
+```
+
 > <strong>Notas:</strong><br><br>
 > MVCC — Recurso avançado de banco de dados que cria versões dos registros para permitir leitura e escrita simultâneas com segurança.
 > Com o MVCC, vários usuários podem consultar e modificar dados ao mesmo tempo sem comprometer a integridade do banco.
