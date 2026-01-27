@@ -1,6 +1,8 @@
 ## 📌 Fluxo de Pull Request
 
-Pull Request é o processo de propor, revisar e integrar código de forma controlada e colaborativa.
+Pull Request (PR) é o processo utilizado para propor, revisar e integrar código em um repositório de forma controlada, colaborativa e auditável.
+
+Este documento descreve o ciclo de vida padrão de um Pull Request, aplicável a plataformas como GitHub, GitLab e Bitbucket.
 
 ```Text
 ┌───────────────────────────┐                       ┌───────────────────────────────────┐         ┌───────────────────────────────────────┐        ┌────────────────────────────┐
