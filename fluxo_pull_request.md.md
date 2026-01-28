@@ -8,7 +8,7 @@ Este documento descreve o ciclo de vida padrão de um Pull Request, aplicável a
 ┌───────────────────────────┐                       ┌───────────────────────────────────┐         ┌───────────────────────────────────────┐        ┌────────────────────────────┐
 │     Criação do branch     │                       |    Abertura do Pull Request       |         | Validações automáticas (opcional)     |        |  Pós-merge (boas práticas) |
 │  - Branch criado a partir |                       |  Comparação:                      |         |  - CI/CD                              |        | Deletar branch de feature  |
-|  da base (main, develop).  │                       |    - origem: branch de feature    |         |  - Testes                             |        | Deploy                     |
+|  da base (main, develop). │                       |    - origem: branch de feature    |         |  - Testes                             |        | Deploy                     |
 └────────────┬──────────────┘                       |    - destino: branch principal    |         |  - Lint                               |        | Monitoramento              |
              |                                      |  PR nasce com status open ou draft|         |  - Build                              |        └────────────────────────────┘
              ▼                                      └─────────────────┬─────────────────┘         | O PR pode ficar blocked se algo falhar|      
